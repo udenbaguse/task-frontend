@@ -4,16 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BelanjaKu - Marketplace</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
     <header class="topbar">
       <div class="brand">BelanjaKu</div>
       <form class="search" id="searchForm">
         <input id="searchInput" type="text" placeholder="Cari produk..." />
-        <button type="submit">Cari</button>
       </form>
-      <button id="cartBtn" class="cart-btn">Keranjang (0)</button>
+      <div class="topbar-actions">
+        <button type="submit" form="searchForm" class="search-btn">Cari</button>
+        <button id="cartBtn" class="cart-btn">Keranjang (0)</button>
+      </div>
     </header>
 
     <main class="layout">
@@ -31,6 +33,6 @@
       </section>
     </main>
 
-    <script type="module" src="js/main.js"></script>
+    <script type="module" src="assets/js/main.js"></script>
   </body>
 </html>
