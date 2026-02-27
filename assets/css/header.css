@@ -1,0 +1,51 @@
+.topbar {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 0.75rem;
+  padding: clamp(0.85rem, 1.5vw, 1rem) clamp(0.9rem, 2vw, 1.25rem);
+  background: #fff;
+  border-bottom: 1px solid var(--line);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+
+  .brand {
+    font-size: 1.3rem;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+  .search {
+    display: flex;
+
+    input {
+      border-radius: 10px;
+      border: 1px solid var(--line);
+      padding: 0.65rem 0.85rem;
+      font-size: 0.95rem;
+      flex: 1;
+    }
+  }
+
+  .topbar-actions {
+    display: flex;
+    gap: 0.5rem;
+    justify-self: end;
+  }
+
+  :is(.search-btn, .cart-btn) {
+    border-radius: 10px;
+    border: 1px solid var(--line);
+    padding: 0.65rem 0.85rem;
+    font-size: 0.95rem;
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      background: var(--accent-hover);
+    }
+  }
+}

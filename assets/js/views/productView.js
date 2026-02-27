@@ -8,6 +8,7 @@ export function renderProducts(rootElement, products, formatRupiah) {
       <img src="${product.image}" alt="${product.name}" />
       <div class="product-info">
         <h3 class="product-name">${product.name}</h3>
+        <p class="product-desc">${product.description}</p>
         <div class="product-meta">${product.category} - ${product.sold} terjual</div>
         <div class="product-price">${formatRupiah(product.price)}</div>
         <button class="add-btn" data-id="${product.id}">+ Keranjang</button>
