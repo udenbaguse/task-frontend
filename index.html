@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BelanjaKu - Marketplace</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/fontawesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/solid.min.css"
+    />
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
@@ -13,8 +21,8 @@
         <input id="searchInput" type="text" placeholder="Cari produk..." />
       </form>
       <div class="topbar-actions">
-        <button type="submit" form="searchForm" class="search-btn">Cari</button>
-        <button id="cartBtn" class="cart-btn">Keranjang (0)</button>
+        <button type="submit" form="searchForm" class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button id="cartBtn" class="cart-btn"><i class="fa-solid fa-cart-arrow-down"></i> (0)</button>
       </div>
     </header>
 
@@ -26,7 +34,7 @@
 
       <section class="content">
         <div class="content-head">
-          <h1>Produk Pilihan</h1>
+          <h1>Produk pilihan</h1>
           <p id="resultInfo">Menampilkan semua produk</p>
         </div>
         <div id="productGrid" class="product-grid"></div>

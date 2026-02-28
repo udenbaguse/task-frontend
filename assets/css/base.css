@@ -6,6 +6,9 @@
   --line: #dbe2ef;
   --accent: #ff6b2c;
   --accent-hover: #e2581f;
+  --sidebar-col: minmax(210px, 250px);
+  --page-gap: clamp(0.75rem, 1.5vw, 1rem);
+  --page-pad: clamp(0.75rem, 1.5vw, 1rem);
 }
 
 * {
